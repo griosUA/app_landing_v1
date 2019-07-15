@@ -1,0 +1,877 @@
+html, body {
+	margin: 0px; 
+    padding: 0px;
+}
+
+body{}
+	/* каждому контейнеру с контентом
+	    max-width: 1200px;
+	    margin: 0 auto; */
+
+/*fonts*/
+
+@font-face {
+        font-family: "LatoRegular";
+        src: url("fonts/Lato/LatoRegular/LatoRegular.eot");
+        src: url("fonts/Lato/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+            url("fonts/Lato/LatoRegular/LatoRegular.woff") format("woff"),
+            url("fonts/Lato/LatoRegular/LatoRegular.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+}
+
+@font-face {
+        font-family: "LatoBold";
+        src: url("fonts/Lato/LatoBold/LatoBold.eot");
+        src: url("fonts/Lato/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+            url("fonts/Lato/LatoBold/LatoBold.woff") format("woff"),
+            url("fonts/Lato/LatoBold/LatoBold.ttf") format("truetype");
+            font-style: normal;
+            font-weight: normal;
+}
+
+.wrap{
+	/* width: 1148px; */
+	/* width: 100%; */
+	max-width: 1148px;
+	margin: 0 auto;
+}
+
+.flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#upbutton {
+    background: url("img/icon_work_money.png") no-repeat top left;
+    height: 157px;
+    width: 162px;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+
+.hide {
+	display: none;
+}
+
+/* header */
+
+header {
+	background: url(img/slider1.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+nav {
+	display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 30px;
+    justify-content: space-between;
+	/* display: flex;
+	max-width: 1200px;
+	    margin: 0 auto;
+	    padding: 30px; */
+	/* display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1070px;
+	padding-top: 20px;
+	padding-bottom: 119px;
+	margin: 0 auto; */
+}
+
+nav ul {
+	padding: 0px 0px 0px 0px;
+}
+
+.headmenu {
+	display: flex;
+    width: 600px;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+	/* display: flex;
+	justify-content: space-between;
+	max-width: 1070px; */
+
+	    /* width: 619px; */
+    /* -webkit-flex-flow: row wrap; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* max-width: 1070px; */
+}
+
+
+
+
+.headmenu a{
+	font-family: "LatoBold";
+	font-size: 15px;
+	color: #fefefe;
+	transition: 1.5s;
+}
+
+.headmenu a:hover {
+    opacity: 0.3;
+    transition: 1.5s;
+   
+}
+
+.navleft  {
+	align-self: center;
+	font-family: "LatoBold";
+	font-size: 15px;
+	color: #fefefe;
+	transition: 1.5s;
+}
+
+.navleft:hover {
+	opacity: 0.3;
+    transition: 1.5s;
+}
+
+
+/* Подчеркивание ссылок: */
+
+.headmenu a {
+text-decoration:none; 
+display: inline-block; 
+}
+
+.headmenu a:after {
+    display: block; 
+    content: ""; 
+    height: 3px; 
+    width: 0%; 
+    background-color: #afe1c5;
+    transition: width 0.7s ease-in-out; 
+}
+
+.headmenu a:hover:after,
+.headmenu a:focus:after {
+    width: 100%;
+}
+
+.headmenu a:hover{
+  color: #ffffff;
+} 
+
+
+/* about */
+
+.about{
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto; 
+	padding: 0 30px 0 30px;
+}
+
+.abouttext {
+	display: flex;
+	flex-direction: column;
+}
+
+.abouttext h1 {
+	font-family: "LatoBold";
+	text-transform: uppercase;
+	color: #a9fedd;
+	font-size: 60pt;
+	text-shadow: -2px 1px 0px #434647;
+	margin: 0;
+}
+.abouttext h2 {
+	font-family: "LatoBold";
+	color: #fafafa;
+	font-size: 41pt;
+	margin: 0;
+}
+
+.abouta{
+	color: #ebebeb;
+	font-family: "LatoRegular";
+	font-size: 21pt;
+}
+
+.download {
+	display: flex;
+    justify-content: space-evenly;
+    padding: 17% 0px 0px 0px;
+    max-width: 800px;
+}
+
+.download a{
+    transition: 1.5s;
+   
+}
+
+.download a:hover {
+    opacity: 0.3;
+    transition: 1.5s;
+   
+}
+
+.aboutphone {
+	display: flex;
+	align-items: flex-end;
+}
+
+
+/* Что такое AdvertApp*/
+
+.whatisit {
+	display: flex;
+	    justify-content: space-around;
+	    flex-wrap: wrap;
+	    padding-top: 100px;
+	    max-width: 1200px;
+	    margin: 0 auto; 
+	/* display: flex;
+	justify-content: space-around;
+	max-width: 1150px;
+	max-height: 750px;
+	padding-top: 100px;  */
+}
+
+.imacvideo {
+	/* flex-basis: 675px; */
+	background: url(img/for_video.png);
+	background-repeat: no-repeat;
+	width: 671px;
+	height: 561px;
+    padding-left: 65px;
+    padding-top: 40px;
+}
+
+/* .imacvideo {
+	flex-basis: 65%;
+} */
+
+.about-advertapp-media {
+	flex-basis: 35%;
+	/* flex-shrink: 100; */
+}
+
+.about-advertapp-media h1 {
+	font-family: "LatoBold";
+	color: #272d30;
+	font-size: 26px;
+	margin: 0;
+}
+
+.about-advertapp-media p {
+	font-family: "LatoRegular";
+	color: #7d7b79;
+	font-size: 20px;
+}
+
+.aamt {
+	font-family: "LatoBold";
+	color: #40a591;
+}
+
+.aamt1 {
+	font-family: "LatoBold";
+}
+
+.aamt2 {
+	font-family: "LatoBold";
+	color: #40a591;
+}
+
+/* Как это работает? */
+
+.how-it-work {
+	background: url(img/slider_work.png);
+	background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.howitworks {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+.how-itwork-list {
+	display: flex;
+	flex-direction: column;	
+	/* flex-basis: 59%;  */
+}
+
+.how-itwork-phone {
+	display: flex; 
+    margin-top: 40px;
+}
+}
+
+.how-itwork-heading {
+	flex-basis: 100%;
+	text-align: center;
+}
+
+.how-itwork-list h2 {
+	font-family: "LatoRegular";
+	color: #ffffff;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.how-itwork-list p {
+	padding-left: 30px;
+}
+
+.work-load, .work-task, .work-money {
+	display: flex;
+	flex-basis: 182px;
+	align-items: center;
+}
+
+.work-load, .work-task, .work-money p {
+	font-family: "LatoRegular";
+	color: #ffffff;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.howitworksphone {
+	display: flex;
+	align-items: flex-end;
+}
+
+/* анимации */
+
+.work-load, .work-task, .work-money {
+	-moz-transition: all 0.5s ease-out;
+ -o-transition: all 0.5s ease-out;
+ -webkit-transition: all 0.5s ease-out;
+}
+
+.work-load:hover, .work-task:hover, .work-money:hover{
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ }
+
+/* advertapp дарит тебе */
+
+.advertapp-gift-list {
+	display: flex;
+	justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px 0px 50px 0px;
+    max-width: 1200px;
+	margin: 0 auto;
+}
+
+.advertapp-gift-heading {
+	flex-basis: 100%;
+	text-align: center;
+
+}
+
+.advertapp-gift-heading2{
+	font-family: "LatoBold";
+    color: #40a591;
+    text-transform: uppercase;
+}
+
+.advertapp-gift-heading-style-h {
+	font-family: "LatoBold";
+	color: #403e3d;
+	font-size: 18px;
+	margin: 0;
+}
+
+.advertapp-gift-heading-style-p {
+	font-family: "LatoRegular";
+	color: #6b6866;
+	font-size: 15px;
+	margin: 0;
+	text-align: center;
+
+}
+
+.advertapp-gift-heading3 {
+	font-family: "LatoBold";
+	color: #555b62;
+	text-transform: uppercase;
+}
+
+.gift-money, .gift-harmful, .gift-referral, .gift-free, .gift-choice {
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 26%;
+    padding: 30px 0px 30px 0px;
+}
+
+/* анимации */
+
+.gift-money img, .gift-harmful img, .gift-referral img, .gift-free img, .gift-choice img{
+	-o-transition: transform 3s linear;
+	-ms-transition: transform 3s linear;
+	-moz-transition: transform 3s linear;
+	-webkit-transition: transform 3s linear;
+	transition: transform 0.5s linear;
+}
+
+.gift-money:hover img, .gift-harmful:hover img, .gift-referral:hover img, .gift-free:hover img, .gift-choice:hover img{
+	-o-transform: rotate(1turn);
+	-ms-transform: rotate(1turn);
+	-moz-transform: rotate(1turn);
+	-webkit-transform: rotate(1turn);
+	transform: rotate(1turn);
+}
+
+
+/* выводи деньги куда хочешь */
+
+.incoming-money {
+	background: url(img/slider_money.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 50px 0px 50px 0px;
+}
+
+.incoming-money-list{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.income-money-heading{
+	flex-basis: 100%;
+	text-align: center;
+}
+
+.income-money-heading h2{
+	font-family: "LatoBold";
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.money-mobile, .money-qiwi, .money-webmoney, .money-yandex, .money-mailru, .money-all {
+	display: flex;
+	align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    /* flex-basis: 26%; */
+}
+
+.income-money-heading-style-p{
+	font-family: "LatoRegular";
+	font-size: 15px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+/* анимация вывода */
+
+.money-mobile:hover, .money-qiwi:hover, .money-webmoney:hover, .money-yandex:hover, .money-mailru:hover, .money-all:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+/* контакты */
+
+.contacts {
+	    padding: 0 10px 0 10px;
+}
+
+.contacts-text h1{
+	font-family: "LatoRegular";
+	font-size: 27px;
+	color: #81858a;
+	text-align: center;
+}
+
+.contacts-text p{
+	font-family: "LatoRegular";
+	font-size: 15px;
+	color: #81858a;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.contacs-form-container {
+	display: flex;
+	max-width: 900px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 30px 0 30px 0;
+}
+
+/* input {
+	width: 300px;
+	background-color: #e5faf5;
+}
+ */
+.contacs-form {
+	width: 450px;
+}
+
+.text-form, .mail-form, .text-area-form {
+	border: 0;
+	width: 100%;
+	background-color: #e5faf5;
+	height: 35px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+
+.text-area-form {
+	width: 100%;
+    height: 60px;
+    background-color: #e5faf5;
+    border: none;
+    resize: none;
+}
+
+.send-form {
+	 display: inline-block;
+	background: #55afa4;
+	width: 130px;
+	height: 40px;
+	    border-radius: 7px;
+	    font-family: "LatoBold";
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+}
+
+.contacts-left{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+    align-items: center;
+}
+
+.contacs-mail {
+	    display: flex;
+    align-items: center;
+}
+
+.icon-mail {
+	    padding-right: 20px;
+}
+
+.mail {
+	font-family: "LatoRegular";
+	color: #423e3c;
+	font-size: 20px;
+}
+
+.contacs-socials {
+	transition: 0.5s;
+}
+
+.contacs-socials a:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+   
+}
+
+footer {
+	background-color: #5f8d87;
+}
+
+.footer-list {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-download {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.footer-copyright{ 
+	font-family: "LatoRegular";
+	font-size: 19px;
+	color: #ffffff;
+ }
+
+/* .block {
+        display: none;
+    } */
+
+
+@media screen and (max-width: 1140px) {
+	.about-advertapp-media {
+    flex-basis: 100%;
+    padding: 10px;
+    text-align: center;
+	}
+
+	.whatisit {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    padding-top: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 992px) {
+
+	.about {
+		display: flex;
+    	max-width: 1200px;
+    	margin: 0 auto;
+    	text-align: center;
+	}	
+	.aboutphone, .how-itwork-phone {
+		display: none;
+	}
+	.about-advertapp-media {
+		flex-basis: 100%;
+	}
+	.download {
+    	display: flex;
+    	justify-content: space-evenly;
+    	max-width: 800px;
+    	    padding-left: 60px;
+    padding-top: 0;
+    }
+
+    .about-advertapp-media {
+    flex-basis: 100%;
+    padding: 10px;
+    text-align: center;
+	}
+
+	.whatisit {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    padding-top: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.contacs-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	}
+
+	.contacts-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 23px;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.imacvideo {
+    background: url(img/for_video.png);
+    background-size: contain;
+    width: 100%;
+    height: 537px;
+    padding-left: 29px;
+    padding-top: 25px;
+	}
+
+	iframe {
+		width: 90%;
+    padding-left: 11px;
+    padding-bottom: 29px;
+	}
+}
+
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1010;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  text-align: left;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  white-space: normal;
+}
+
+.popover.top {
+  margin-top: -10px;
+}
+
+.popover.right {
+  margin-left: 10px;
+}
+
+.popover.bottom {
+  margin-top: 10px;
+}
+
+.popover.left {
+  margin-left: -10px;
+}
+
+.popover-title {
+  margin: 0;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+
+.popover-content {
+  padding: 9px 14px;
+}
+
+.popover>.arrow,.popover>.arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.popover>.arrow {
+  border-width: 11px;
+}
+
+.popover>.arrow:after {
+  border-width: 10px;
+  content: "";
+}
+
+.popover.top>.arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-bottom-width: 0;
+  border-top-color: #999;
+  border-top-color: rgba(0,0,0,.25);
+  bottom: -11px;
+}
+
+.popover.top>.arrow:after {
+  content: " ";
+  bottom: 1px;
+  margin-left: -10px;
+  border-bottom-width: 0;
+  border-top-color: #fff;
+}
+
+.popover.right>.arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-left-width: 0;
+  border-right-color: #999;
+  border-right-color: rgba(0,0,0,.25);
+}
+
+.popover.right>.arrow:after {
+  content: " ";
+  left: 1px;
+  bottom: -10px;
+  border-left-width: 0;
+  border-right-color: #fff;
+}
+
+.popover.bottom>.arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0,0,0,.25);
+  top: -11px;
+}
+
+.popover.bottom>.arrow:after {
+  content: " ";
+  top: 1px;
+  margin-left: -10px;
+  border-top-width: 0;
+  border-bottom-color: #fff;
+}
+
+.popover.left>.arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: #999;
+  border-left-color: rgba(0,0,0,.25);
+}
+
+.popover.left>.arrow:after {
+  content: " ";
+  right: 1px;
+  border-right-width: 0;
+  border-left-color: #fff;
+  bottom: -10px;
+}
